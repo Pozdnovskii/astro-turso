@@ -4,11 +4,14 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "dev-prod-db": "astro dev --remote",
+    "build": "astro build --remote",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/db": "^0.15.0",
+    "@astrojs/vercel": "^8.2.3",
     "astro": "^5.12.2"
   }
 }
